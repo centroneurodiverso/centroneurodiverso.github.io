@@ -276,7 +276,7 @@ p {
 }
 
 .navbar-brand img {
-  max-width: 342px;
+  max-width: 250px;
 }
 
 .navbar-toggler {
@@ -1721,7 +1721,7 @@ p {
   padding-top: 130px;
   padding-bottom: 80px;
   background: var(--primary-color);
-  background-image: url("../images/banner/banner-bg.png");
+  background-image: url("../images/banner/banner-bg2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
