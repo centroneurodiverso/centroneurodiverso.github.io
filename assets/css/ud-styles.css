@@ -367,7 +367,7 @@ p {
   .navbar-nav .nav-item > a {
     display: block;
     padding: 8px 0;
-    color: #212121;
+    color: var(--white);
   }
 }
 
