@@ -356,7 +356,7 @@ p {
 .navbar-nav .nav-item > a {
   font-size: 16px;
   font-weight: 400;
-  color: #212121;
+  color: #666666;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 25px 8px;
@@ -378,7 +378,7 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item > a:hover, .navbar-nav .nav-item > a.active {
-    color: #212121;
+    color: #666666;
     opacity: 1;
   }
 }
@@ -417,22 +417,22 @@ p {
 
 .navbar-nav .nav-item .ud-submenu .ud-submenu-link {
   padding: 7px 0;
-  color: #212121;
+  color: #666666;
   font-size: 14px;
 }
 
 .navbar-nav .nav-item .ud-submenu .ud-submenu-link:hover {
-  color: #212121;
+  color: #666666;
 }
 
 .navbar-nav .nav-item:hover > a {
-  color: #212121;
+  color: #666666;
   opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item:hover > a {
-    color: #212121;
+    color: #666666;
     opacity: 1;
   }
 }
@@ -494,7 +494,7 @@ p {
 
 .navbar-btn .ud-white-btn:hover {
   background: white;
-  color: var(--heading-color);
+  color: #666666;
 }
 
 .sticky .navbar-toggler .toggler-icon {
@@ -516,11 +516,11 @@ p {
 }
 
 .sticky .navbar-btn .ud-main-btn.ud-login-btn {
-  color: var(--heading-color);
+  color: #666666;
 }
 
 .sticky .navbar-btn .ud-main-btn.ud-login-btn:hover {
-  color: var(--primary-color);
+  color: #666666;
   opacity: 1;
 }
 
