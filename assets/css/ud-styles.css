@@ -579,14 +579,14 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ud-hero-content .ud-hero-title {
-    font-size: 38px;
+    font-size: 58px;
     line-height: 50px;
   }
 }
 
 @media (max-width: 767px) {
   .ud-hero-content .ud-hero-title {
-    font-size: 26px;
+    font-size: 48px;
     line-height: 38px;
   }
 }
@@ -1735,7 +1735,7 @@ p {
 
 .ud-banner-content h1 {
   color: var(--black);
-  font-size: 58px;
+  font-size: 38px;
   font-weight: 700;
 }
 
