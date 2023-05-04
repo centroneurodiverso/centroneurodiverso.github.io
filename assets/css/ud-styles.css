@@ -1691,7 +1691,7 @@ p {
 }
 
 .ud-footer-bottom .ud-footer-bottom-left a:hover {
-  color: var(--primary-color);
+  color: var(--body-color);
 }
 
 .ud-footer-bottom .ud-footer-bottom-right {
