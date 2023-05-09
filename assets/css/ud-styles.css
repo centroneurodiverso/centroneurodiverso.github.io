@@ -130,6 +130,7 @@ p {
   line-height: 26px;
   color: var(--body-color);
   margin: 0px;
+  text-align: justify;
 }
 
 .bg_cover {
@@ -1338,7 +1339,6 @@ p {
 .ud-single-team .ud-team-info h5 {
   font-weight: 500;
   font-size: 18px;
-  text-transform: capitalize;
   margin-bottom: 10px;
   color: var(--body-color);
 }
@@ -1521,6 +1521,7 @@ p {
   display: block;
   font-weight: normal;
   font-size: 12px;
+  text-align: justify;
 }
 
 .ud-contact-form-wrapper .ud-form-group input,
