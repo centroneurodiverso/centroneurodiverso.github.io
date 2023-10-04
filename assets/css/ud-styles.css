@@ -624,6 +624,7 @@ p {
 
 .ud-hero-buttons .ud-main-btn {
   margin: 8px;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
