@@ -220,14 +220,83 @@
     <!-- ====== Blog End ====== -->
 
     <!-- ====== PIE DE PAGINA ====== -->
-<div id="footer"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
-</script>
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+	  <div class="shape shape-1">
+        <img src="assets/images/footer/shape-1.png" alt="shape" />
+      </div>
+      <div class="shape shape-3">
+        <img src="assets/images/footer/shape-3.png" alt="shape" />
+      </div>
+      <div class="ud-footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="ud-widget">
+                <a href="index.html" class="ud-footer-logo">
+				  <h5 class="ud-widget-title">Contacto</h5>
+                </a>
+                <p class="ud-widget-desc">
+                  Sotovila 2 - Of. 2 Guadiaro 689018773 c.neurodiverso@gmail.com
+                </p>
+                <ul class="ud-widget-socials">
+                  <li>
+                    <a href="https://facebook.com">
+                      <i class="lni lni-facebook-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com">
+                      <i class="lni lni-instagram-filled"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">Enlaces de interés</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="index.html#metodo">Método Padovan</a>
+                  </li>
+                  <li>
+                    <a href="index.html#servicios">Servicios</a>
+                  </li>
+                  <li>
+                    <a href="index.html#conocenos">Conócenos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ud-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="ud-footer-bottom-left">
+                <li>
+                  <a href="aviso-legal.html">Aviso legal</a>
+                </li>
+                <li>
+                  <a href="politica-de-privacidad.html">Política de privacidad</a>
+                </li>
+				<li>
+                  <a href="politica-de-cookies.html">Política de cookies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <p class="ud-footer-bottom-right">
+                Centro Neurodiverso 2023
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- ====== Back To Top Start ====== -->
     <a href="javascript:void(0)" class="back-to-top">
