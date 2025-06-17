@@ -29,6 +29,7 @@ body {
   font-style: normal;
   color: var(--body-color);
   overflow-x: hidden;
+  text-align: justify;
 }
 
 * {
