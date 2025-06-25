@@ -521,141 +521,18 @@
     </section>
 
     <!-- ====== PIE DE PAGINA ====== -->
-    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
-	  <div class="shape shape-1">
-        <img src="assets/images/footer/shape-1.png" alt="shape" />
-      </div>
-      <div class="shape shape-3">
-        <img src="assets/images/footer/shape-3.png" alt="shape" />
-      </div>
-      <div class="ud-footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="ud-widget">
-                <a href="index.html" class="ud-footer-logo">
-				  <h5 class="ud-widget-title">Contacto</h5>
-                </a>
-                <p class="ud-widget-desc">
-					Av. Ciro Gil, Edif. Sotovila 2 - Of. 2, 11311 Guadiaro, Cádiz  
-                </p>
-				<p class="ud-widget-desc">
-					Telf: 689018773
-				</p>
-				<p class="ud-widget-desc">
-					c.neurodiverso@gmail.com
-				</p>
-                <ul class="ud-widget-socials">
-                  <li>
-                    <a href="https://facebook.com">
-                      <i class="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com">
-                      <i class="lni lni-instagram-filled"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Enlaces de interés</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="#metodo">Método Padovan</a>
-                  </li>
-                  <li>
-                    <a href="#servicios">Servicios</a>
-                  </li>
-                  <li>
-                    <a href="#conocenos">Conócenos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ud-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                <li>
-                  <a href="aviso-legal.html">Aviso legal</a>
-                </li>
-                <li>
-                  <a href="politica-de-privacidad.html">Política de privacidad</a>
-                </li>
-				<li>
-                  <a href="politica-de-cookies.html">Política de cookies</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p class="ud-footer-bottom-right">
-                Centro Neurodiverso 2023
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ====== BOTON VOLVER ARRIBA ====== -->
-    <a href="javascript:void(0)" class="back-to-top">
-      <i class="lni lni-chevron-up"> </i>
-    </a>
+    <div id="footer-container"></div>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+         document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 
     <!-- ====== ARCHIVOS JAVASCRIPT ====== -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      // ==== for menu scroll
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
-
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
-      });
-
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
-
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-    </script>
   </body>
 </html>
