@@ -244,106 +244,14 @@
     </section>
 
     <!-- ====== CONTACTO ====== -->
-    <section id="contact" class="ud-contact">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-8 col-lg-7">
-            <div class="ud-contact-content-wrapper">
-			 <div class="ud-contact-title">
-				<div class="ud-contact-info-wrapper">
-                <div class="ud-single-info">
-                  <div class="ud-info-icon">
-                    <i class="lni lni-map-marker"></i>
-                  </div>
-                  <div class="ud-info-meta">
-                    <h5>Lugar</h5>
-                    <p>Av. Ciro Gil, Edif. Sotovila 2- Of 2, 11311 Guadiaro, Cádiz</p>
-                  </div>
-                </div>
-                <div class="ud-single-info">
-                  <div class="ud-info-icon">
-                    <i class="lni lni-phone"></i>
-                  </div>
-                  <div class="ud-info-meta">
-                    <h5>Teléfono</h5>
-                    <p>+34 689 01 87 73</p>
-                  </div>
-                </div>
-				<div class="ud-single-info">
-                  <div class="ud-info-icon">
-                    <i class="lni lni-envelope"></i>
-                  </div>
-                  <div class="ud-info-meta">
-                    <h5>Correo</h5>
-                    <p>c.neurodiverso@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-			 </div>
-			<div class="ud-section-mapa">
-				<object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1753.2926073717667!2d-5.304750075951434!3d36.29890046316961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cc5b6cfb376e5%3A0x34b6fac82875c336!2sCentro%20Neurodiverso!5e0!3m2!1ses!2ses!4v1748267170920!5m2!1ses!2ses"></object>
-            </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div
-              class="ud-contact-form-wrapper wow fadeInUp"
-              data-wow-delay=".2s"
-            >
-              <h3 class="ud-contact-form-title">Envíanos un mensaje</h3>
-              <form class="ud-contact-form" action="https://formspree.io/f/xdovbzpb" method="POST">
-                <div class="ud-form-group">
-                  <label for="fullName">Nombre</label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Carlos"
-					required
-                  />
-                </div>
-                <div class="ud-form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="ejemplo@ejemplo.com"
-					required
-                  />
-                </div>
-                <div class="ud-form-group">
-                  <label for="phone">Teléfono (opcional)</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder=""
-                  />
-                </div>
-                <div class="ud-form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea
-                    name="message"
-                    rows="3"
-                    placeholder="Escribe aquí tu mensaje"
-					required
-                  ></textarea>
-                </div>
-		<div class="ud-form-group"></div>
-		<label><input type="checkbox" name="aviso_legal" required> He leído y acepto el aviso legal y la política de privacidad.</label>
-		<div class="ud-form-group">
-                 <label>A los efectos previstos en el Reglamento General de Protección de Datos (RGPD), se le informa que los datos personales que nos facilita a través de este formulario se incorporarán a un fichero de la entidad Centro Neurodiverso. Puede ver información detallada en nuestro <a href="aviso-legal.html">Aviso Legal</a> y <a href="politica-de-privacidad.html">Política de Privacidad</a>.</label>
-                </div>	
-                <div class="ud-form-group mb-0">
-                  <button type="submit" class="ud-main-btn">
-                    Enviar mensaje
-                  </button>
-                </div>			
-			  </form>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+	<div id="contact-container"></div>
+    <script>
+      fetch('contact.html')
+        .then(response => response.text())
+        .then(data => {
+         document.getElementById('contact-container').innerHTML = data;
+        });
+    </script>
 
     <!-- ====== PIE DE PAGINA ====== -->
     <div id="footer-container"></div>
